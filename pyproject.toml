@@ -3,22 +3,13 @@ name = "veckeysearch"
 version = "1.0.1"
 description = "vector search package"
 authors = ["Jungeun17 <kkhj826@naver.com>"]
-readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
 langchain-community = "^0.3.24"
-notebook = "^7.4.3"
-ipykernel = "^6.29.5"
-pypdf = "^5.6.0"
-unstructured = {extras = ["pdf"], version = "^0.17.2"}
-pdfminer = "^20191125"
-pymupdf = "^1.26.0"
-pdfminer-six = "^20250506"
 langchain-text-splitters = "^0.3.8"
 opensearch-py = "^2.8.0"
 langchain-openai = "^0.3.19"
-ipdb = "^0.13.13"
 langgraph = "^0.4.8"
 
 
