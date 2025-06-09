@@ -3,7 +3,6 @@ name = "veckeysearch"
 version = "1.0.0"
 description = "vector search package"
 authors = ["Jungeun17 <kkhj826@naver.com>"]
-readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
