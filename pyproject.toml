@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "veckeysearch"
-version = "1.0.1"
+version = "1.0.2"
 description = "vector search package"
 authors = ["Jungeun17 <kkhj826@naver.com>"]
 
