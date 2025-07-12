@@ -1,4 +1,8 @@
 from veckeysearch.graph import graph
+from dotenv import load_dotenv
+import os
+
+load_dotenv(override = True)
 
 config1 = {
     "configurable": {
@@ -6,8 +10,8 @@ config1 = {
         "host" : "localhost",
         "port" : 9200,
         "id" : "admin",
-        "pwd" : "..",
-        "api_key" : "..",
+        "pwd" : os.getenv("OPENSEARCH_PASSWORD"),
+        "api_key" : os.getenv("OPENAI_API_KEY"),
         "keyword_weight" : 0.6, # hybrid search
         "vector_weight" : 0.4 , # hybrid search
         "debug": True
