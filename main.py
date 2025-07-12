@@ -6,8 +6,8 @@ config1 = {
         "host" : "localhost",
         "port" : 9200,
         "id" : "admin",
-        "pwd" : "Fnmedia!12",
-        "api_key" : "sk-proj-5mcCjPsGXAAMrCSNV3QuT3BlbkFJIDGGF1emXre3vz6wZ8HE",
+        "pwd" : "..",
+        "api_key" : "..",
         "keyword_weight" : 0.6, # hybrid search
         "vector_weight" : 0.4 , # hybrid search
         "debug": True
