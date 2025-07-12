@@ -1,11 +1,7 @@
 from opensearchpy import OpenSearch
 
-def connect_db():
-
-    host = "localhost"
-    port = 9200
-    auth = ("admin", "Kimjung5309!")
-
+def connect_db(host: str, port: int, auth: tuple) -> OpenSearch:
+    
     client = OpenSearch(
         hosts=[{"host": host, "port": port}],
         http_auth=auth,
@@ -13,4 +9,4 @@ def connect_db():
         verify_certs=False,
         ssl_show_warn=False,
     )
-    return client 
+    return client

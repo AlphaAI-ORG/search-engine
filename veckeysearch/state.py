@@ -1,15 +1,13 @@
-from typing import TypedDict, Literal
-from pydantic import BaseModel, Field # TODO : result basemodel class
-
+from typing import TypedDict, Literal, List
 
 class State(TypedDict):
 
     # input
     search_method : Literal['keyword','vector','hybrid']
     user_query : str
-
-    #config
     search_num : int
+    target_docs : List[str]
+    #config
     index_name : str
     
     # search results

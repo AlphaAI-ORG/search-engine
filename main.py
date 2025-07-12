@@ -2,16 +2,23 @@ from veckeysearch.graph import graph
 
 config1 = {
     "configurable": {
-        "thread_id": "user_1",  #uuid 로 변경?
-        "index_name": "test_0603",
-        "search_num": 5,
+        "index_name": "test_0712",
+        "host" : "localhost",
+        "port" : 9200,
+        "id" : "admin",
+        "pwd" : "Fnmedia!12",
+        "api_key" : "sk-proj-5mcCjPsGXAAMrCSNV3QuT3BlbkFJIDGGF1emXre3vz6wZ8HE",
+        "keyword_weight" : 0.6, # hybrid search
+        "vector_weight" : 0.4 , # hybrid search
         "debug": True
     }
 }
-user_query = "투자의 공포"
-search_method = "vector"
+user_query = "공포"
+search_method = "hybrid" #keyword, vector, hybrid
+search_num = 5
+target_docs = ['아빠와 딸의 주식 투자 레슨']
 
-result = graph.invoke({"user_query": user_query, "search_method": search_method}, config=config1)
+result = graph.invoke({"user_query": user_query, "search_method": search_method, "search_num" : search_num, "target_docs": target_docs}, config=config1)
 
 print(result["search_results"])
 print(len(result["search_results"])) # 5 = search_num

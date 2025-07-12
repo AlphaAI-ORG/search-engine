@@ -64,5 +64,5 @@ builder.add_conditional_edges(
 builder.add_edge("rrf","postprocessor")
 builder.add_edge("postprocessor",END)
 
-memory = MemorySaver()
-graph = builder.compile(checkpointer=memory)
+#memory = MemorySaver()
+graph = builder.compile()
